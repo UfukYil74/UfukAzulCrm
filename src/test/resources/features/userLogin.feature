@@ -1,4 +1,4 @@
-  @AZLC-1415
+  @AZLC-1415,@US1,@All
   Feature: AzulCrm Login Functionality
     User Story :  As a user, I should be able to log in
 
@@ -17,7 +17,7 @@
     Background: For the scenarios in the feature file, user is expected to be on login page
       Given User is on the login page
 
-      @AC1
+      @AC1 @wip
       Scenario Outline: As a User, I can log in with valid credentials of different account types
         When  User enters valid username "<username>"
         And   User enters valid password "<password>"
@@ -31,7 +31,7 @@
           | helpdesk22@cybertekschool.com  | UserUser  |
 
 
-      @AC2
+      @AC2 @wip
       Scenario Outline: As a User, I should see the "Incorrect login or password." message when I enter the invalid credentials
         When  User enters any username "<username>"
         And   User enters any password "<password>"
@@ -45,7 +45,7 @@
             | invalid                        | invalid  |
 
 
-     @AC3
+     @AC3 @wip
      Scenario Outline: As a User, I should see the "Please fill out this field" message if the password or username is empty
        When  User enters any username "<username>"
        And   User enters any password "<password>"
@@ -59,31 +59,31 @@
          |                                |          |
 
 
-    @AC4
+    @AC4 @wip
      Scenario: As a User, I should land on the "Get Password" page after clicking on the "Forgot your password"
        When User click Forgot your password link
        Then User land  on the Get Password page
 
 
-    @AC5
+    @AC5 @wip
      Scenario: As a User, I can see the "Remember Me" link exists and is clickable on the login page
        Then User click Remember Me link
 
 
-    @AC6
+    @AC6 @wip
     Scenario: As a User, I should see the password in bullet signs by default on the login page
       When User enters any password
       Then User should see the password in bullet signs by default
 
 
-    @AC7
+    @AC7 @wip
     Scenario: verify Enter key is working on the login page
       When user enter valid username and password
       And  user press ENTER
       Then user access the home page
 
 
-    @AC8
+    @AC8 @wip
     Scenario Outline: As a User, I can see my own usernames in the profile menu, after login succesfully
       When  User enters valid username "<username>"
       And   User enters valid password "<password>"

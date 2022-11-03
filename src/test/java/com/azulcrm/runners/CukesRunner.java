@@ -9,12 +9,13 @@ import org.junit.runner.RunWith;
         plugin = {
                 "html:target/cucumber-reports.html" ,
                 "json:target/cucumber.json",
+                "junit:target/report.xml",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
         },
         features = "src/test/resources/features",
         glue = "com/azulcrm/step_definitions",
         dryRun = false,
-        tags = "@AZLC-1415"
+        tags = "@wip"
 )
 
 

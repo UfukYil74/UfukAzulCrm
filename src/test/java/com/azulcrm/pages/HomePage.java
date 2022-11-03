@@ -15,5 +15,10 @@ public class HomePage {
     @FindBy(className = "user-name")
     public WebElement userName;
 
+    @FindBy(id = "user-block")
+    public WebElement userNameBtn;
+
+    @FindBy(xpath = "//*[@id=\"popup-window-content-menu-popup-user-menu\"]/div/div/a[3]")
+    public WebElement logOutLink;
 
 }
